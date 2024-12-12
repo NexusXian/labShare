@@ -1,0 +1,36 @@
+{{define "demo03/h3.html"}}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xyhc03</title>
+    <link rel="stylesheet" href="/s/css/testcss.css">
+    <link rel="icon" href="/s/images/swpu.ico">
+</head>
+<body>
+<header>
+    <h1>这是数组的渲染</h1>
+</header>
+
+<main>
+    <h2>我永远喜欢西南交通大学</h2>
+
+    <span>this is a red text</span>
+    <br>
+
+    <br>
+
+    {{range .}}
+        {{.}}
+    {{end}}
+    <br>
+    <img src="/s/images/go03.png" alt="go03" width="600" height="400">
+</main>
+
+<footer>
+    <p>&copy; 请不要在意界面的美观，谢谢。</p>
+</footer>
+</body>
+</html>
+{{end}}

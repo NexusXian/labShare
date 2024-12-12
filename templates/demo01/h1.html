@@ -1,0 +1,33 @@
+{{define "demo01/h1.html"}}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xyhc01</title>
+  <link rel="stylesheet" href="/s/css/testcss.css">
+  <link rel="icon" href="/s/images/swpu.ico">
+</head>
+<body>
+<header>
+  <h1>这是一个字符串的渲染</h1>
+</header>
+
+<main>
+  <h2>我永远喜欢四川大学</h2>
+
+  <span>this is a red text</span>
+  <br>
+
+  <br>
+{{.}}
+  <br>
+  <img src="/s/images/go01.png" alt="go01" width="600" height="400">
+</main>
+
+<footer>
+  <p>&copy; 请不要在意界面的美观，谢谢。</p>
+</footer>
+</body>
+</html>
+{{end}}

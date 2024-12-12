@@ -1,0 +1,33 @@
+{{define "demo07/h7.html"}}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xyhc07</title>
+  <link rel="stylesheet" href="/s/css/testcss.css">
+  <link rel="icon" href="/s/images/swpu.ico">
+</head>
+<body>
+<header>
+  <h1>这是切片的渲染啊喂</h1>
+</header>
+
+<main>
+  <h2>我永远喜欢西南石油大学</h2>
+
+  <span>this is a red text</span>
+  <br>
+  {{range .}}
+    {{.}}
+  {{end}}
+  <br>
+  <img src="/s/images/go07.png" alt="go07" width="600" height="400">
+</main>
+
+<footer>
+  <p>&copy; 请不要在意界面的美观，谢谢。</p>
+</footer>
+</body>
+</html>
+{{end}}
